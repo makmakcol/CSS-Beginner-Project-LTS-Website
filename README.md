@@ -23,8 +23,8 @@ This project is the final project in Dave Gray's "CSS tutorial for beginners" an
 
 🔗Resources🔗
 
-- https://www.youtube.com/watch?v=cMN2Odm5ieA&list=PL0Zuz27SZ-6Mx9fd9elt80G1bPcySmWit&index=25
-- https://youtube.com/watch?v=T5PD8ofhiug
+- [Dave Gray's CSS Complete Project for Beginners](https://www.youtube.com/watch?v=cMN2Odm5ieA&list=PL0Zuz27SZ-6Mx9fd9elt80G1bPcySmWit&index=25)
+- [Dave Gray's HTML5 Website Project for Beginners](https://youtube.com/watch?v=T5PD8ofhiug)
 
 
 
