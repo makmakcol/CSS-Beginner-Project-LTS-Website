@@ -6,7 +6,66 @@ This project is the final project in Dave Gray's "CSS tutorial for beginners" an
 
 ## ⚡️Key Features⚡️
 
-- Menu: HTML table elements are converted to CSS grid (lines 288 through 343).
+- Menu: HTML table elements are converted to CSS grid.
+  ```css
+  /* || MENU */
+
+  thead, 
+  tbody, 
+  tfoot, 
+  tr {
+    display: contents;
+  }
+
+  .menu__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "hd1 hd2 hd3"
+                          "cr cr1 cr1p"
+                          "cr cr2 cr2p"
+                          "cr cr3 cr3p"
+                          "sf sf1 sf1p"
+                          "sf sf2 sf2p"
+                          "sf sf3 sf3p"
+                          "cs cs cs";
+    gap: 0.1em;
+    margin-bottom: 1em;
+  }
+
+  .menu__cr {
+    grid-area: cr;
+  }
+
+  .menu__sf {
+    grid-area: sf;
+  }
+
+  .menu__cs {
+    grid-area: cs;
+  }
+
+  .menu__cr, 
+  .menu__sf,
+  .menu__cs,
+  .menu__header {
+    color: var(--HIGHLIGHT-COLOR);
+    font-weight: bolder;
+    height: 100%;
+    display: grid;
+    place-content: center;
+  }
+
+  .menu__header,
+  .menu__item {
+    width: 100%;
+    padding: 1em;
+    border: medium ridge var(--BORDER-COLOR);
+  }
+
+  .menu__item {
+    display: grid;
+    place-content: center;
+  }
 - Hero: CSS animation is applied to the initial welcome message when the site first loads (lines 177 through 209).
 - Responsive Design: With the use of modern CSS, minimal media queries are needed as the site responds to both large and small screens (lines 361 through 376).
 - Light/Dark Mode: Both light and dark mode are featured in this project. The preferred method is set to dark mode in the media query (lines 62 through 79).
