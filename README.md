@@ -1,9 +1,11 @@
 🌮The Little Taco Shop CSS Redesign🌮
 
 ✨About✨
+
 This project is the final project in Dave Gray's "CSS tutorial for beginners" and is chapter 24 of the course. It starts with the HTML code from Dave Gray's previous "HTML tutorial for beginners" and overhauls the design of the site with modern CSS.
 
 ⚡️Key Features⚡️
+
 - Menu: HTML table elements are converted to CSS grid (lines 288 through 343).
 - Hero: CSS animation is applied to the initial welcome message when the site first loads (lines 177 through 209).
 - Responsive Design: With the use of modern CSS, minimal media queries are needed as the site responds to both large and small screens (lines 361 through 376).
@@ -20,8 +22,9 @@ This project is the final project in Dave Gray's "CSS tutorial for beginners" an
 4. Click "Go Live" and the website will be viewed in your browser.
 
 🔗Resources🔗
-https://www.youtube.com/watch?v=cMN2Odm5ieA&list=PL0Zuz27SZ-6Mx9fd9elt80G1bPcySmWit&index=25
-https://youtube.com/watch?v=T5PD8ofhiug
+
+- https://www.youtube.com/watch?v=cMN2Odm5ieA&list=PL0Zuz27SZ-6Mx9fd9elt80G1bPcySmWit&index=25
+- https://youtube.com/watch?v=T5PD8ofhiug
 
 
 
