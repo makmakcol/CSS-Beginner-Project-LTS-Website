@@ -1,10 +1,10 @@
-🌮The Little Taco Shop CSS Redesign🌮
+# 🌮The Little Taco Shop CSS Redesign🌮
 
-✨About✨
+## ✨About✨
 
 This project is the final project in Dave Gray's "CSS tutorial for beginners" and is chapter 24 of the course. It starts with the HTML code from Dave Gray's previous "HTML tutorial for beginners" and overhauls the design of the site with modern CSS.
 
-⚡️Key Features⚡️
+## ⚡️Key Features⚡️
 
 - Menu: HTML table elements are converted to CSS grid (lines 288 through 343).
 - Hero: CSS animation is applied to the initial welcome message when the site first loads (lines 177 through 209).
@@ -14,14 +14,14 @@ This project is the final project in Dave Gray's "CSS tutorial for beginners" an
 - BEM Methodology: Block Element Modifiers methodology is applied to the CSS and HTML to keep the code structured and organized.
 - ABCSS: Alphabetical organization of custom variables is applied for readability.
 
-💡How To Run💡
+## 💡How To Run💡
 
 1. Fork this repository.
 2. Open the files in your code editor of choice (I use VS Code).
 3. Install the extension "Live Server" by Ritwick Dey.
 4. Click "Go Live" and the website will be viewed in your browser.
 
-🔗Resources🔗
+## 🔗Resources🔗
 
 - [Dave Gray's CSS Complete Project for Beginners](https://www.youtube.com/watch?v=cMN2Odm5ieA&list=PL0Zuz27SZ-6Mx9fd9elt80G1bPcySmWit&index=25)
 - [Dave Gray's HTML5 Website Project for Beginners](https://youtube.com/watch?v=T5PD8ofhiug)
