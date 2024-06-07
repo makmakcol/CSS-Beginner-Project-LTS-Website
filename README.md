@@ -11,6 +11,11 @@ This project is the final project in Dave Gray's "CSS tutorial for beginners" an
 - Responsive Design: With the use of modern CSS, minimal media queries are needed as the site responds to both large and small screens (lines 361 through 376).
 - Light/Dark Mode: Both light and dark mode are featured in this project. The preferred method is set to dark mode in the media query (lines 62 through 79).
 - JavaScript Functions: A touch of JavaScript has been added to update the year of the copyright.
+  ```javascript
+  const year = document.getElementById("year")
+  const thisYear = new Date().getFullYear()
+  year.setAttribute("datetime", thisYear)
+  year.textContent = thisYear
 - BEM Methodology: Block Element Modifiers methodology is applied to the CSS and HTML to keep the code structured and organized.
 - ABCSS: Alphabetical organization of custom variables is applied for readability.
 
