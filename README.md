@@ -66,9 +66,79 @@ This project is the final project in Dave Gray's "CSS tutorial for beginners" an
     display: grid;
     place-content: center;
   }
-- Hero: CSS animation is applied to the initial welcome message when the site first loads (lines 177 through 209).
-- Responsive Design: With the use of modern CSS, minimal media queries are needed as the site responds to both large and small screens (lines 361 through 376).
-- Light/Dark Mode: Both light and dark mode are featured in this project. The preferred method is set to dark mode in the media query (lines 62 through 79).
+- Hero: CSS animation is applied to the initial welcome message when the site first loads.
+  ```css
+  /* || HERO */
+
+  .hero {
+    position: relative;
+  }
+
+  .hero__h2 {
+    background-color: var(--HERO-BGCOLOR);
+    color: var(--HERO-COLOR);
+    padding: 0.25em 0.5em;
+    text-shadow: 2px 2px 5px var(--BORDER-COLOR);
+    position: absolute;
+    top: -100px;
+    left: 20px;
+    animation: showWelcome 0.5s ease-in-out 1s forwards;
+  }
+
+  @keyframes showWelcome {
+    0% {
+        top: -20px;
+        transform: skew(0deg, -5deg) scaleY(0);
+    }
+
+    80% {
+        top: 30px;
+        transform: skew(10deg, -5deg) scaleY(1.2);
+    }
+
+    100% {
+        top: 20px;
+        transform: skew(-10deg, -5deg) scaleY(1);
+    }
+  }
+- Responsive Design: With the use of modern CSS, minimal media queries are needed as the site responds to both large and small screens.
+  ```css
+  @media screen and (min-width: 576px) {
+    .header__h1::before {
+        content: '🌮 '
+    }
+
+    .header__h1::after {
+        content: ' 🌮'
+    }
+
+    .menu__header,
+    .menu__cr,
+    .menu__sf,
+    .menu__cs {
+        font-size: 125%;
+    }
+  }
+- Light/Dark Mode: Both light and dark mode are featured in this project. The preferred method is set to dark mode in the media query.
+  ```css
+  @media (prefers-color-scheme: dark) {
+    :root {
+        --BGCOLOR-FADE: gray;
+        --BGCOLOR: #000;
+        --BODY-BGCOLOR: #333;
+        --BORDER-COLOR: whitesmoke;
+        --BUTTON-COLOR:  #000;
+        --FONT-COLOR: whitesmoke;
+        --HEADER-COLOR: whitesmoke;
+        --HERO-COLOR: #333;
+        --HIGHLIGHT-COLOR: whitesmoke;
+        --LINK-ACTIVE: rgb(252, 200, 103);
+        --LINK-COLOR: whitesmoke;
+        --LINK-HOVER: orange;
+        --NAV-BGCOLOR: rgb(20, 20, 20);
+
+    }
+  }
 - JavaScript Functions: A touch of JavaScript has been added to update the year of the copyright.
   ```javascript
   const year = document.getElementById("year")
@@ -76,7 +146,30 @@ This project is the final project in Dave Gray's "CSS tutorial for beginners" an
   year.setAttribute("datetime", thisYear)
   year.textContent = thisYear
 - BEM Methodology: Block Element Modifiers methodology is applied to the CSS and HTML to keep the code structured and organized.
+  ```html
+    <header class="header">
+        <h1 class="header__h1">The Little Taco Shop</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
 - ABCSS: Alphabetical organization of custom variables is applied for readability.
+  ```css
+     /* COLORS */
+    --BGCOLOR-FADE: rgb(252, 220, 160);
+    --BGCOLOR: orange;
+    --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
+    --BODY-BGCOLOR: #fff;
+    --BORDER-COLOR: #333;
+    --BUTTON-COLOR: #fff;
+    --FONT-COLOR: #000;
+    --HEADER-BGCOLOR: #000;
+    --HEADER-COLOR: #fff;
+    --HERO-BGCOLOR: rgba(51, 178, 51, 0.75);
+    --HERO-COLOR: #fff;
+    --HIGHLIGHT-COLOR: rgb(51, 178, 51);
+    --LINK-ACTIVE: orange;
+    --LINK-COLOR: #000;
+    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
+    --NAV-BGCOLOR: #fff;
 
 ## 💡How To Run💡
 
